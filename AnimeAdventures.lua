@@ -40,7 +40,7 @@ local function webhook()
 
 		local data = {
 			["content"] = "",
-			["username"] = "Anime Adventures",
+			["username"] = "SEULAGA",
 			["avatar_url"] = "https://i.guim.co.uk/img/media/4e4ac8d77d51c0520eb5298160143c29a1df5fc1/157_0_2318_1392/master/2318.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=8778cb69d962054cef63465f218458a2",
 			["embeds"] = {
 				{
