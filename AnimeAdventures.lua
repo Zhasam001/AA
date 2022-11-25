@@ -45,7 +45,7 @@ local function webhook()
 			["embeds"] = {
 				{
 					["author"] = {
-						["name"] = "Anime Adventures | Result ✔",
+						["name"] = "=Result",
 						["icon_url"] = "https://cdn.discordapp.com/emojis/997123585476927558.webp?size=96&quality=lossless"
 					},
 					["description"] = "🎮 ||**"..game:GetService("Players").LocalPlayer.Name.."**|| 🎮",
