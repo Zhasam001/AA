@@ -203,7 +203,6 @@ function sex()
 
     local autofrmserver = win:Server("Auto Farm Section", "http://www.roblox.com/asset/?id=11579310982")
     local webhookserver = win:Server("Discord Wehhook  ", "http://www.roblox.com/asset/?id=11585480207")
-    local cngelogserver = win:Server("Changelog        ", "http://www.roblox.com/asset/?id=11579189531")
     local creditsserver = win:Server("Credits          ", "http://www.roblox.com/asset/?id=11579371312")
 
 
