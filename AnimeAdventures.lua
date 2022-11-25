@@ -185,7 +185,7 @@ function sex()
     local exec = tostring(identifyexecutor())
 
     local DiscordLib = loadstring(game:HttpGet "https://raw.githubusercontent.com/Forever4D/Lib/main/DiscordLib2.lua")()
-    local win = DiscordLib:Window("[😈UPD 7] Anime Adventures "..versionx.." - "..exec)
+    local win = DiscordLib:Window(" Anime Adventures "..versionx.." - "..exec)
        
     if exec == "Synapse X" or exec == "ScriptWare" or exec == "Trigon" then
         print("Good boi")
@@ -1003,9 +1003,8 @@ end)
 --#endregion
 
     local credits = creditsserver:Channel("✨ Credits")
-    credits:Label("Arpon AG#6612")
-    credits:Label("Forever4D#0001")
-    credits:Label(" ")
+    credits:Label("Seola")
+    
 end
 
 --------------------------------------------------
