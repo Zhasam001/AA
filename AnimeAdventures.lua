@@ -185,7 +185,7 @@ function sex()
     local exec = tostring(identifyexecutor())
 
     local DiscordLib = loadstring(game:HttpGet "https://raw.githubusercontent.com/Forever4D/Lib/main/DiscordLib2.lua")()
-    local win = DiscordLib:Window(" Anime Adventures "..versionx.." - "..exec)
+    local win = DiscordLib:Window(" Anime Adventures ")
        
     if exec == "Synapse X" or exec == "ScriptWare" or exec == "Trigon" then
         print("Good boi")
@@ -984,22 +984,6 @@ end)
 
 
     end
---#endregion
-
---#region changelog
-    local changelog = cngelogserver:Channel("💬 Changelog")
-    changelog:Label("-- 1.5.9 --")
-    changelog:Label("+ Fixed Auto Farm not starting\n+ Added new default positions for units.")
-    changelog:Label("-- 1.5.8 --\n")
-    changelog:Label("+ Added Auto Challenge\n+ Added Auto Leave Toggle\n+ Better Auto Farming now\n+ Fixed some bugs\n")
-    changelog:Label("-- 1.5.7 -- ")
-    changelog:Label("+ Added Auto Buy for Special Banner")
-    changelog:Label("-- 1.5.6 -- ")
-    changelog:Label("+ Fixed not executing")
-    changelog:Label("-- 1.5.5 -- ")
-    changelog:Label("+ Added Clover Legend\n+ Fixed Auto Ability breaking randomly")
-    changelog:Label("-- v1.5.4 --")
-    changelog:Label("+ Added Clover Kingdom")
 --#endregion
 
     local credits = creditsserver:Channel("✨ Credits")
