@@ -981,6 +981,21 @@ end)
         end)
 --#endregion
 
+		--#region changelog
+    local changelog = cngelogserver:Channel("💬 Changelog")
+    changelog:Label("-- 1.5.9 --")
+    changelog:Label("+ Fixed Auto Farm not starting\n+ Added new default positions for units.")
+    changelog:Label("-- 1.5.8 --\n")
+    changelog:Label("+ Added Auto Challenge\n+ Added Auto Leave Toggle\n+ Better Auto Farming now\n+ Fixed some bugs\n")
+    changelog:Label("-- 1.5.7 -- ")
+    changelog:Label("+ Added Auto Buy for Special Banner")
+    changelog:Label("-- 1.5.6 -- ")
+    changelog:Label("+ Fixed not executing")
+    changelog:Label("-- 1.5.5 -- ")
+    changelog:Label("+ Added Clover Legend\n+ Fixed Auto Ability breaking randomly")
+    changelog:Label("-- v1.5.4 --")
+    changelog:Label("+ Added Clover Kingdom")
+--#endregion
     local credits = creditsserver:Channel("✨ Credits")
     credits:Label("Seola")
     
