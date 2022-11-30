@@ -1,4 +1,4 @@
-local versionx = "1.5.9"
+local versionx = "1.6.0"
 
 ---// Loading Section \\---
 task.wait(2)
@@ -40,12 +40,12 @@ local function webhook()
 
 		local data = {
 			["content"] = "",
-			["username"] = "SEULAGA",
-			["avatar_url"] = "https://i.guim.co.uk/img/media/4e4ac8d77d51c0520eb5298160143c29a1df5fc1/157_0_2318_1392/master/2318.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=8778cb69d962054cef63465f218458a2",
+			["username"] = "Seola",
+			["avatar_url"] = "https://dbkpop.com/wp-content/uploads/2019/04/wjsn_wj_stay_seola_profile.jpg",
 			["embeds"] = {
 				{
 					["author"] = {
-						["name"] = "=Result",
+						["name"] = "Result",
 						["icon_url"] = "https://cdn.discordapp.com/emojis/997123585476927558.webp?size=96&quality=lossless"
 					},
 					["description"] = "🎮 ||**"..game:GetService("Players").LocalPlayer.Name.."**|| 🎮",
@@ -185,7 +185,7 @@ function sex()
     local exec = tostring(identifyexecutor())
 
     local DiscordLib = loadstring(game:HttpGet "https://raw.githubusercontent.com/Forever4D/Lib/main/DiscordLib2.lua")()
-    local win = DiscordLib:Window(" Anime Adventures ")
+    local win = DiscordLib:Window("[😈UPD 7] Anime Adventures "..versionx.." - "..exec)
        
     if exec == "Synapse X" or exec == "ScriptWare" or exec == "Trigon" then
         print("Good boi")
@@ -203,6 +203,7 @@ function sex()
 
     local autofrmserver = win:Server("Auto Farm Section", "http://www.roblox.com/asset/?id=11579310982")
     local webhookserver = win:Server("Discord Wehhook  ", "http://www.roblox.com/asset/?id=11585480207")
+    local cngelogserver = win:Server("Changelog        ", "http://www.roblox.com/asset/?id=11579189531")
     local creditsserver = win:Server("Credits          ", "http://www.roblox.com/asset/?id=11579371312")
 
 
@@ -370,7 +371,7 @@ function sex()
         end)
 
         local worlddrop = slectworld:Dropdown("Select World", {"Plannet Namak", "Shiganshinu District", "Snowy Town","Hidden Sand Village", "Marine's Ford",
-        "Ghoul City", "Hollow World", "Ant Kingdom", "Magic Town", "Cursed Academy","Clover Kingdom", "Clover Legend - HARD"}, getgenv().world, function(world)
+        "Ghoul City", "Hollow World", "Ant Kingdom", "Magic Town", "Cursed Academy","Clover Kingdom", "Clover Legend - HARD","Hollow Legend - HARD"}, getgenv().world, function(world)
             getgenv().world = world
             updatejson()
             if world == "Plannet Namak" then
@@ -448,30 +449,37 @@ function sex()
                     getgenv().leveldrop:Add(v)
                 end
             elseif world == "Cursed Academy" then
-                    getgenv().leveldrop:Clear()
-                    table.clear(levels)
-                    getgenv().levels = {"jjk_infinite","jjk_level_1","jjk_level_2","jjk_level_3",
-                                        "jjk_level_4","jjk_level_5","jjk_level_6",}
-                    for i, v in ipairs(levels) do
-                        getgenv().leveldrop:Add(v)
-                    end
-            elseif world == "Clover Kingdom" then
-                    getgenv().leveldrop:Clear()
-                    table.clear(levels)
-                    getgenv().levels = {"clover_infinite","clover_level_1","clover_level_2","clover_level_3",
-                                        "clover_level_4","clover_level_5","clover_level_6",}
-                    for i, v in ipairs(levels) do
-                        getgenv().leveldrop:Add(v)
-                    end
-            elseif world == "Clover Legend - HARD" then
-                    getgenv().leveldrop:Clear()
-                    table.clear(levels)
-                    getgenv().levels = {"clover_legend_1","clover_legend_2","clover_legend_3",}
-                    for i, v in ipairs(levels) do
-                        getgenv().leveldrop:Add(v)
-                    end
+                getgenv().leveldrop:Clear()
+                table.clear(levels)
+                getgenv().levels = {"jjk_infinite","jjk_level_1","jjk_level_2","jjk_level_3",
+                                    "jjk_level_4","jjk_level_5","jjk_level_6",}
+                for i, v in ipairs(levels) do
+                    getgenv().leveldrop:Add(v)
                 end
-            end)
+            elseif world == "Clover Kingdom" then
+                getgenv().leveldrop:Clear()
+                table.clear(levels)
+                getgenv().levels = {"clover_infinite","clover_level_1","clover_level_2","clover_level_3",
+                                    "clover_level_4","clover_level_5","clover_level_6",}
+                for i, v in ipairs(levels) do
+                    getgenv().leveldrop:Add(v)
+                end
+            elseif world == "Clover Legend - HARD" then
+                getgenv().leveldrop:Clear()
+                table.clear(levels)
+                getgenv().levels = {"clover_legend_1","clover_legend_2","clover_legend_3",}
+                for i, v in ipairs(levels) do
+                    getgenv().leveldrop:Add(v)
+                end
+            elseif world == "Hollow Legend - HARD" then
+                getgenv().leveldrop:Clear()
+                table.clear(levels)
+                getgenv().levels = {"bleach_legend_1","bleach_legend_2","bleach_legend_3","bleach_legend_4","bleach_legend_5",}
+                for i, v in ipairs(levels) do
+                    getgenv().leveldrop:Add(v)
+                end
+            end
+        end)
 
       
             getgenv().leveldrop = slectworld:Dropdown("Select Level", getgenv().levels, getgenv().level, function(level)
@@ -981,8 +989,14 @@ end)
         end)
 --#endregion
 
-		--#region changelog
+
+    end
+--#endregion
+
+--#region changelog
     local changelog = cngelogserver:Channel("💬 Changelog")
+    changelog:Label("-- 1.6.0 --")
+    changelog:Label("+ Added Legend Stages - Hollow Invation")
     changelog:Label("-- 1.5.9 --")
     changelog:Label("+ Fixed Auto Farm not starting\n+ Added new default positions for units.")
     changelog:Label("-- 1.5.8 --\n")
@@ -996,9 +1010,11 @@ end)
     changelog:Label("-- v1.5.4 --")
     changelog:Label("+ Added Clover Kingdom")
 --#endregion
+
     local credits = creditsserver:Channel("✨ Credits")
-    credits:Label("Seola")
-    
+    credits:Label("Arpon AG#6612")
+    credits:Label("Forever4D#0001")
+    credits:Label(" ")
 end
 
 --------------------------------------------------
