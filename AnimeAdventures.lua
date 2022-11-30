@@ -590,7 +590,7 @@ function sex()
 		autoloadtab:Label("This Automatically executes script when you teleport to man.")
         autoloadtab:Label("You don't need to put the script in AutoExec folder!")
         autoloadtab:Toggle("Auto Load Script", getgenv().AutoLoadTP, function(bool)
-            queue_on_teleport("loadstring(game:HttpGet("https://raw.githubusercontent.com/Zhasam001/AA/main/AnimeAdventures.lua'))()")
+            queue_on_teleport("loadstring(game:HttpGet('https://raw.githubusercontent.com/Zhasam001/AA/main/AnimeAdventures.lua'))()")
             getgenv().AutoLoadTP = bool
             updatejson()
         end)
