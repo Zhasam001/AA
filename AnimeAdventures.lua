@@ -2467,7 +2467,7 @@ coroutine.resume(coroutine.create(function()
 end))
 
 if getgenv().AutoLoadTP == true then
-    queue_on_teleport("loadstring(game:HttpGet('https://raw.githubusercontent.com/ArponAG/Scripts/main/AnimeAdventures.lua'))()")
+    queue_on_teleport("loadstring(game:HttpGet('https://raw.githubusercontent.com/Zhasam001/AA/main/AnimeAdventures.lua'))()")
 end
 
 
