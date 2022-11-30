@@ -46,7 +46,7 @@ local function webhook()
 				{
 					["author"] = {
 						["name"] = "Anime Adventures • Result",
-						["icon_url"] = "https://cdn.discordapp.com/emojis/997123585476927558.webp?size=96&quality=lossless"
+						["icon_url"] = "🌌"
 					},
 					["description"] = "🎮 ||**"..game:GetService("Players").LocalPlayer.Name.."**|| 🎮",
 					["color"] = 240081,
@@ -79,7 +79,7 @@ local function webhook()
                             ["inline"] = true
                         }, {
                             ["name"] = "Current Level:",
-                            ["value"] = tostring(game.Players.LocalPlayer.PlayerGui.spawn_units.Lives.Main.Desc.Level.Text).. " 👾",
+                            ["value"] = tostring(game.Players.LocalPlayer.PlayerGui.spawn_units.Lives.Main.Desc.Level.Text).. " 🔰",
                             ["inline"] = true
                         }
 					}
