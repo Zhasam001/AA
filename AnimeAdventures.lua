@@ -45,11 +45,11 @@ local function webhook()
 			["embeds"] = {
 				{
 					["author"] = {
-						["name"] = "Result",
+						["name"] = "Anime Adventures • Result",
 						["icon_url"] = "https://cdn.discordapp.com/emojis/997123585476927558.webp?size=96&quality=lossless"
 					},
 					["description"] = "🎮 ||**"..game:GetService("Players").LocalPlayer.Name.."**|| 🎮",
-					["color"] = 110335,
+					["color"] = 240081,
 
 					["thumbnail"] = {
 						['url'] = "https://www.roblox.com/headshot-thumbnail/image?userId=" .. game.Players.LocalPlayer.userId .. "&width=420&height=420&format=png"
@@ -59,27 +59,27 @@ local function webhook()
 						{
 							["name"] = "Total Waves:",
 							["value"] = tostring(waves[2]) ..
-								" <:wave:997136622363627530>",
+								" 🌊",
 							["inline"] = true
 						}, {
 							["name"] = "Recieved Gems:",
-							["value"] = gems .. " <:gem:997123585476927558>",
+							["value"] = gems .. " 💎",
 							["inline"] = true
-						}, {
-                            ["name"] = "Recieved XP:",
-                            ["value"] = XP .. " 🧪",
+						}, {  
+			    ["name"] = "Recieved XP:",
+                            ["value"] = XP .. " 👾",
                             ["inline"] = true
                         }, {
                             ["name"] = "Total Time:",
-                            ["value"] = tostring(ttime[2]) .. " ⏳",
+                            ["value"] = tostring(ttime[2]) .. " 🕧",
                             ["inline"] = true
                         }, {
                             ["name"] = "Current Gems:",
-                            ["value"] = tostring(game.Players.LocalPlayer._stats.gem_amount.Value).." <:gem:997123585476927558>",
+                            ["value"] = tostring(game.Players.LocalPlayer._stats.gem_amount.Value).." 💎",
                             ["inline"] = true
                         }, {
                             ["name"] = "Current Level:",
-                            ["value"] = tostring(game.Players.LocalPlayer.PlayerGui.spawn_units.Lives.Main.Desc.Level.Text).. " ✨",
+                            ["value"] = tostring(game.Players.LocalPlayer.PlayerGui.spawn_units.Lives.Main.Desc.Level.Text).. " 👾",
                             ["inline"] = true
                         }
 					}
